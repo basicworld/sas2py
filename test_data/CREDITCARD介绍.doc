@@ -1,0 +1,126 @@
+Description of the German credit dataset.
+
+1. Title: German Credit data
+
+2. Source Information
+
+Professor Dr. Hans Hofmann  
+Institut f"ur Statistik und "Okonometrie  
+Universit"at Hamburg  
+FB Wirtschaftswissenschaften  
+Von-Melle-Park 5    
+2000 Hamburg 13 
+
+3. Number of Instances:  1000
+
+Two datasets are provided.  the original dataset, in the form provided
+by Prof. Hofmann, contains categorical/symbolic attributes and
+is in the file "german.data".   
+ 
+For algorithms that need numerical attributes, Strathclyde University 
+produced the file "german.data-numeric".  This file has been edited 
+and several indicator variables added to make it suitable for 
+algorithms which cannot cope with categorical variables.   Several
+attributes that are ordered categorical (such as attribute 17) have
+been coded as integer.    This was the form used by StatLog.
+
+6. Number of Attributes german: 20 (7 numerical, 13 categorical)
+   
+7.  Cost Matrix
+
+This dataset requires use of a cost matrix (see below)
+
+
+      1        2
+----------------------------
+  1   0        1
+-----------------------
+  2   5        0
+
+(1 = Good,  2 = Bad)
+
+the rows represent the actual classification and the columns
+the predicted classification.
+It is worse to class a customer as good when they are bad (5), 
+than it is to class a customer as bad when they are good (1).
+
+
+* CHECKING: Status of existing checking account 
+o 2: 0 to <200 DM 
+o 3: >=200 DM/ salary assignments for at least 1 year 
+o 4: no checking account 
+* DURATION: Duration in months 
+* HISTORY: Credit history 
+o 0: no credits taken/all credits paid back duly 
+o 1: all credits at this bank paid back duly 
+o 2: existing credits paid back duly till now 
+o 3: delay in paying off in the past 
+o 4: critical account/other credits existing (not at this bank) 
+* PURPOSE: Purpose 
+o 0: car (new) 
+o 1: car (used) 
+o 2: furniture/equipment 
+o 3: radio/television 
+o 4: domestic appliances 
+o 5: repairs 
+o 6: education 
+o 7: vacation 
+o 8: retraining 
+o 9: business 
+o X: others 
+* AMOUNT: Credit amount 
+* SAVINGS: Savings account/bonds 
+o 1: < 100 DM 
+o 2: 100 to < 500 DM 
+o 3: 500 to < 1000 DM 
+o 4: >= 1000 DM 
+o 5: unknown/no savings account 
+* EMPLOYED: Present employment since 
+o 1: unemployed 
+o 2: < 1 year 
+o 3: 1 to < 4 years 
+o 4: 4 to < 7 years 
+o 5: >= 7 years 
+* INSTALLP: Installment rate in percentage of disposable income 
+* MARITAL: Personal status and gender 
+o 1: male: divorced/separated 
+o 2: female: divorced/separated/married 
+o 3: male: single 
+o 4: male: married/widowed 
+o 5: female: single 
+* COAPP: Other debtors/guarantors 
+o 1: none 
+o 2: co-applicant 
+o 3: guarantor 
+* RESIDENT: Date beginning permanent residence 
+* PROPERTY: Property 
+o 1: real estate 
+o 2: if not 1: building society savings agreement/life insurance 
+o 3: if not 1/2: car or other, not in attribute 6 
+o 4: unknown/no property 
+* AGE: Age in years 
+* OTHER: Other installment plans 
+o 1: bank 
+o 2: stores 
+o 3: none 
+* HOUSING: Housing 
+o 1: rent 
+o 2: own 
+o 3: for free 
+* EXISTCR: Number of existing credits at this bank 
+* JOB: Job 
+o 1: unemployed/unskilled - nonresident 
+o 2: unskilled - resident 
+o 3: skilled employee/official 
+o 4: management/self-employed/highly qualified employee/officer 
+* DEPENDS: Number of dependents 
+* TELEPHONE: Telephone 
+o 1: none 
+o 2: yes, registered under the customer's name 
+* FOREIGN: foreign worker 
+o 1: yes 
+o 2: no 
+* GOOD_BAD: Good or Bad Credit rating 
+o 0: bad 
+o 1: good 
+
